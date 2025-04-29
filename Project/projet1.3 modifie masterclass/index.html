@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="/icons/logo.2.png" alt="Logo Workshop" class="logo">
+        <h1>Python Masterclass</h1>
+        <p>Inscrivez-vous pour participer</p>
+    </header>
+
+    <div class="form-container">
+        <form>
+            <label for="name">Nom complet :</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="                                          @gmail.com">
+
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+213 --- --- --- --- --- --- ----- ----- ----           ">
+
+            <label for="workshop">Choisissez un atelier :</label>
+            <select id="workshop" name="workshop" required>
+                <option value="" disabled selected>Sélectionnez un atelier</option>
+                <option value="python">Python </option>
+                
+                <option value="javascript">JavaScript </option>
+                
+                
+            </select>
+
+            <label for="date">Date préférée :</label>
+            <input type="date" id="date" name="date" min="----/----/-------">
+
+            <label for="comments">Commentaires :</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Avez-vous des questions ou besoins spécifiques ?"></textarea>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <label for="newsletter">Je souhaite recevoir la newsletter</label>
+            </div>
+
+            <button type="submit">S'inscrire maintenant</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Workshop Tech </p>
+    </footer>
+</body>
+</html>
